@@ -1,4 +1,3 @@
-package pl.wg469282.totolotek.system;
 import java.util.*;
 
 public class Losowanie {

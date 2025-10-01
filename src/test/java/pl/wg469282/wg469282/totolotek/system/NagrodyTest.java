@@ -1,4 +1,10 @@
+package pl.wg469282.totolotek.system;
+
 import org.junit.jupiter.api.Test;
+
+import pl.wg469282.totolotek.system.Centrala;
+import pl.wg469282.totolotek.system.Kolektura;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
@@ -24,13 +30,14 @@ public class NagrodyTest {
         kolektura.wydajKuponChybilTrafil(1, 1, gracz);
 
         // Sprawdź czy pula została odpowiednio obliczona
-        long oczekiwanaPula = (3 * 300 * 80  / 100 * 51 / 100); // 3 kupony * cena * po podatku * 51% na nagrody podloga
-        assertEquals(oczekiwanaPula -1 , centrala.getPule().get(0));// -1 bo podloga z dzielenia
+        long oczekiwanaPula = (3 * 300 * 80 / 100 * 51 / 100); // 3 kupony * cena * po podatku * 51% na nagrody podloga
+        assertEquals(oczekiwanaPula - 1, centrala.getPule().get(0));// -1 bo podloga z dzielenia
     }
 
     @Test
     void testMinimalnaPulaIPierwszegoStopnia() {
-        // Nawet bez sprzedanych kuponów, pula I stopnia powinna wynosić minimum 2 mln zł
+        // Nawet bez sprzedanych kuponów, pula I stopnia powinna wynosić minimum 2 mln
+        // zł
         centrala.przeprowadzNLosowania(1);
 
         assertTrue(centrala.getPule1Stopnia().get(0) >= 200000000L); // 2 mln zł = 200 mln groszy
@@ -46,7 +53,8 @@ public class NagrodyTest {
 
     @Test
     void testMinimalnaNagrodaIIIStopnia() {
-        // Nagroda III stopnia nie może być niższa niż 15 * 2,40 zł = 36,00 zł = 3600 groszy
+        // Nagroda III stopnia nie może być niższa niż 15 * 2,40 zł = 36,00 zł = 3600
+        // groszy
         long minimalnaNagrodaIII = 3600L;
         assertTrue(minimalnaNagrodaIII >= 3600L);
     }

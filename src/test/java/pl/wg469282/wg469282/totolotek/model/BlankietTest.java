@@ -1,4 +1,9 @@
+package pl.wg469282.totolotek.model;
+
 import org.junit.jupiter.api.Test;
+
+import pl.wg469282.totolotek.model.Blankiet;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;

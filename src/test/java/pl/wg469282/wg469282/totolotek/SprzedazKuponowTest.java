@@ -1,3 +1,5 @@
+package pl.wg469282.totolotek;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +15,6 @@ public class SprzedazKuponowTest {
         kolektura = centrala.getKolektury().get(0);
         gracz = new Minimalista("Jan", "Kowalski", 12345678, kolektura, centrala.getKolektury());
     }
-
 
     @Test
     void testSprzedazKuponuBezWystarczającychŚrodków() {
@@ -36,7 +37,6 @@ public class SprzedazKuponowTest {
         // Sprawdź, że środki gracza nie zmieniły się (transakcja nie doszła do skutku)
         assertEquals(200L, gracz.ilePieniedzy());
     }
-
 
     @Test
     void testOdprowadzaniePodatku() {

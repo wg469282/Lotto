@@ -1,4 +1,10 @@
+package pl.wg469282.totolotek.system;
+
 import org.junit.jupiter.api.Test;
+
+import pl.wg469282.totolotek.system.Centrala;
+import pl.wg469282.totolotek.system.Kolektura;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
@@ -14,8 +20,8 @@ public class KuponTest {
         kolektura = centrala.getKolektury().get(0);
 
         zaklady = new ArrayList<>();
-        zaklady.add(new Zaklad(new int[]{1, 2, 3, 4, 5, 6}));
-        zaklady.add(new Zaklad(new int[]{7, 8, 9, 10, 11, 12}));
+        zaklady.add(new Zaklad(new int[] { 1, 2, 3, 4, 5, 6 }));
+        zaklady.add(new Zaklad(new int[] { 7, 8, 9, 10, 11, 12 }));
     }
 
     @Test
@@ -37,7 +43,7 @@ public class KuponTest {
         Kupon kupon2 = new Kupon(zaklady, 5, kolektura); // 2 zakłady, 5 losowań
         assertEquals(3000L, kupon2.getCena());
 
-        List<Zaklad> pojedynczyZaklad = Arrays.asList(new Zaklad(new int[]{1, 2, 3, 4, 5, 6}));
+        List<Zaklad> pojedynczyZaklad = Arrays.asList(new Zaklad(new int[] { 1, 2, 3, 4, 5, 6 }));
         Kupon kupon3 = new Kupon(pojedynczyZaklad, 1, kolektura); // 1 zakład, 1 losowanie
         assertEquals(300L, kupon3.getCena());
     }

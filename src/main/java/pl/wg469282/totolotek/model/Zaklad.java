@@ -1,4 +1,3 @@
-package pl.wg469282.totolotek.model;
 
 import java.util.Arrays;
 

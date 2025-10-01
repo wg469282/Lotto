@@ -1,4 +1,3 @@
-package pl.wg469282.totolotek;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

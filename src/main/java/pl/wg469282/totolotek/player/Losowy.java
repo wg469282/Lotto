@@ -1,4 +1,3 @@
-package pl.wg469282.totolotek.player;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 

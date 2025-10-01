@@ -1,4 +1,3 @@
-package pl.wg469282.totolotek.player;
 import java.util.*;
 
 public class Staloliczbowy extends Gracz {

@@ -1,4 +1,9 @@
+package pl.wg469282.totolotek.system;
+
 import org.junit.jupiter.api.Test;
+
+import pl.wg469282.totolotek.system.BudzetPanstwa;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
