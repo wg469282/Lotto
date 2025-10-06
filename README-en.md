@@ -51,22 +51,7 @@ This is an advanced simulator of the popular "Totolotek" number game, implemente
 
 The project includes an extensive suite of unit tests written using **JUnit 5**, which verify the correct operation of key system components.
 
-### Test Scope
-The tests cover, among others:
-- **Ticket Business Logic**: Correctness of ID generation, price calculation, and draw verification.
-- **Financial Calculations**: Accuracy of prize pool calculations, minimum guaranteed amounts, and rollovers.
-- **Sales and Taxes**: Verification of transactions, tax collection, and budget updates.
-- **Data Validation**: Checking input data validation in the `Bet`, `Form`, and player classes.
-- **Error Detection**: Tests that check the system's resilience to incorrect data (e.g., duplicate numbers, out-of-range values).
 
-### Running the Tests
-The included `test.sh` script automates the process of running all unit tests using Maven.
-
-To run the tests, execute the following in the main project directory:
-```bash
-./test.sh
-```
-The script will execute the `mvn test` command, which compiles the project and runs all tests defined in the `src/test/java` directory. The test results will be displayed in the console.
 
 ## 🏗️ Project Structure
 
