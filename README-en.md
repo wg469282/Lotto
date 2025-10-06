@@ -42,8 +42,9 @@ This is an advanced simulator of the popular "Totolotek" number game, implemente
     ```
 3.  **Run the simulation:**
     The main `Main` class runs a full demonstration of the system. You can run it directly from your IDE or from the command line:
-    ```
-    mvn exec:java -Dexec.mainClass="your.package.Main"
+     ```bash
+    chmod +x test.sh
+    ./test.sh
     ```
 
 ## 🧪 Unit Tests
