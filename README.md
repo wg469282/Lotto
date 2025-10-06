@@ -42,8 +42,9 @@ Jest to zaawansowany symulator popularnej gry liczbowej "Totolotek", zaimplement
     ```
 3.  **Uruchom symulację:**
     Główna klasa `Main` uruchamia pełną demonstrację systemu. Można ją uruchomić bezpośrednio z IDE lub z linii komend:
-    ```
-    mvn exec:java -Dexec.mainClass="twoj.pakiet.Main"
+    ```bash
+    chmod +x test.sh
+    ./test.sh
     ```
 
 ## 🧪 Testy Jednostkowe
