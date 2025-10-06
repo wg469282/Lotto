@@ -51,7 +51,12 @@ This is an advanced simulator of the popular "Totolotek" number game, implemente
 
 The project includes an extensive suite of unit tests written using **JUnit 5**, which verify the correct operation of key system components.
 
-
+### Test Scope
+- **Coupon Business Logic**: Correctness of identifier generation, price calculations, draw verification.
+- **Financial Calculations**: Accuracy of calculating prize pools, minimum guaranteed amounts, and accumulation
+- **Sales and Taxes**: Verification of transactions, tax collection, and budget updates.
+- **Data Correctness**: Checking input data validation in Zaklad, Blankiet, and player classes.
+- **Error Detection**: Tests checking system resilience to incorrect data (e.g., duplicate numbers, out-of-range values).
 
 ## 🏗️ Project Structure
 
